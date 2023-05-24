@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Kalam:wght@300;400&family=Montserrat:wght@500&family=Pacifico&display=swap');
+body{
+    font-family: 'Montserrat';
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 20vh;
+    z-index: 100;
+    transition: top 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo-div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo-div img{
+    height: 80%;
+    
+}
+.right-nav{
+    
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.contact-details{
+    flex: 1.7;
+
+}
+.nav-items{
+
+    flex:1;
+}
+.nav-items ul{
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    
+
+}
+.nav-items ul li{
+    flex: 1;
+    display: inline;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.nav-items ul p:hover{
+    color: #0d426c;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.nav-items ul p:after{
+    color: black;
+    font-weight: 100;
+}
+#contact-number{
+    font-size: 30px;
+    font-weight: bold;
+}
+#enq{
+    font-size: 15px;
+}
+span{
+    color: #0d426c;
+}
+.primary-color{
+    color : #0d426c;
+}
+.align-right{
+    text-align: right;
+}
+.contact2{
+    display: flex;
+    height: 100%;
+    margin-right: 5vw;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contact2 p{
+    display: inline;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #0d426c;
+    transform-origin: bottom right;
+    transition: transform 0.7s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.bold{
+    font-weight: bold;
+}
+.banner{
+    width: 100%;
+    z-index: -100;
+}
+.claims #title{
+    color: #33475b;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.claims #desc{
+    color: #33475b;
+    margin-top: 40px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.align-center{
+    text-align: center;
+}
+.offerings{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 350px;
+    border-radius: 10px;
+    height: 350px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #dfe7f0;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s ease-in;
+    
+}
+.card:hover{
+    box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.6), 0 26px 120px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.card #card-title{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.card #card-desc{
+    font-size: 17px;
+    width: 80%;
+    margin-top: 20px;
+}
+.hr-holder{
+    width: 100%;
+    display: flex;
+    margin-top: 14px;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    border-radius: 20px;
+    height: 1px;
+    display: flex;
+    background-color: #0d426c;
+    width: 70%;
+}
+.normal-color{
+    color: #33475b;
+}
+.contact-us{
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #33475b;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contact-us:hover{
+    background-color: #0d426c;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 16px 25px 0 rgba(0, 0, 0, 0.19);
+}  
+.contact-us:active{
+    background-color: white;
+    color: #0d426c;
+}
+@media screen and (max-width:800px) {
+    .offerings{
+        flex-direction: column;
+    }
+}
+.included p{
+    font-size: 30px;
+    margin-top: 50px;
+}
+.included{
+    
+    width: 100%;
+}
+.included-list{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.included-list img{
+    height: 12px;
+    width: 12px;
+    display: inline;
+}
+.core-included-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.core-included-item p{
+    display: inline;
+    font-size: 15px;
+}
