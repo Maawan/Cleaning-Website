@@ -8,3 +8,15 @@ window.onscroll = function(){
     }
     prevScrollpos = currentScrollPos;
 }
+var isEnabled = false;
+var ham = document.getElementById("hambargon-icon-image")
+ham.addEventListener('click',(event)=>{
+    console.log("Clicked")
+    var navItem = document.getElementsByClassName("nav-items");
+    if(!isEnabled){
+        
+    }else{
+        
+    }
+
+})
